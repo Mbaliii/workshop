@@ -1,0 +1,14 @@
+[debug] [2023-08-18T08:33:08.156Z] ----------------------------------------------------------------------
+[debug] [2023-08-18T08:33:08.162Z] Command:       /home/mbalikhumalo/nodejs/bin/node /home/mbalikhumalo/nodejs/bin/firebase deploy
+[debug] [2023-08-18T08:33:08.163Z] CLI Version:   12.4.8
+[debug] [2023-08-18T08:33:08.164Z] Platform:      linux
+[debug] [2023-08-18T08:33:08.164Z] Node Version:  v18.14.2
+[debug] [2023-08-18T08:33:08.165Z] Time:          Fri Aug 18 2023 10:33:08 GMT+0200 (South Africa Standard Time)
+[debug] [2023-08-18T08:33:08.165Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-18T08:33:08.294Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-18T08:33:08.295Z] > authorizing via signed-in user (mbalikhumalo408@gmail.com)
+[debug] [2023-08-18T08:33:08.296Z] [iam] checking project workshop-app-ac4d5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-18T08:33:08.300Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/workshop-app-ac4d5:testIamPermissions [none]
+[debug] [2023-08-18T08:33:08.300Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/workshop-app-ac4d5:testIamPermissions x-goog-quota-user=projects/workshop-app-ac4d5
+[debug] [2023-08-18T08:33:08.301Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/workshop-app-ac4d5:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
