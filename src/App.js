@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <h1>User Input App</h1>
-      <form onSubmit={}>
+      <form onSubmit={""}>
         <label>
           Enter you Name....
           <input
