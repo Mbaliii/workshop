@@ -13,10 +13,11 @@ function App() {
 
   return (
     <div className="App">
+      <div className="background-image" />
       <h1>User Input App</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          Enter you Name....
+          Enter you Name:
           <input
             type="text"
             value={userInput}
@@ -25,12 +26,12 @@ function App() {
         </label>
         <button type="submit">Submit</button>
       </form>
-      {displayText && <p>You have entered this value: {displayText}</p>}
+      {displayText && <p>You have entered:  {displayText}</p>}
 
-      <h1>User Input App</h1>
+
       <form onSubmit={handleSubmit}>
         <label>
-          Enter you Name....
+          Enter you Surname:
           <input
             type="text"
             value={userInput}
@@ -39,7 +40,21 @@ function App() {
         </label>
         <button type="submit">Submit</button>
       </form>
-      {displayText && <p>You have entered this value: {displayText}</p>}
+      {displayText && <p>You have entered: {displayText}</p>}
+
+
+      <form onSubmit={handleSubmit}>
+        <label>
+          Enter Your Age:
+          <input
+            type="num"
+            value={userInput}
+            onChange={(e) => setUserInput(e.target.value)}
+          />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      {displayText && <p>You have entered: {displayText}</p>}
     </div>
   );
 }
