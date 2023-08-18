@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+// import './App.css';
 
 function App() {
   const [userInput, setUserInput] = useState('');
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="background-image" />
+      {/* <div className="background-image" /> */}
       <h1>User Input App</h1>
       <form onSubmit={handleSubmit}>
         <label>
@@ -47,7 +47,7 @@ function App() {
         <label>
           Enter Your Age:
           <input
-            type="num"
+            type="text"
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
           />
