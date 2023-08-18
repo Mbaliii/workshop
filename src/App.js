@@ -3,18 +3,18 @@ import './App.css';
 
 function App() {
   const [userInput, setUserInput] = useState('');
-  const [displayText, setDisplayText] = useState('');
+  // const [displayText, setDisplayText] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setDisplayText(userInput);
-    setUserInput('');
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setDisplayText(userInput);
+  //   setUserInput('');
+  // };
 
   return (
     <div className="App">
       <h1>User Input App</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={}>
         <label>
           Enter you Name....
           <input
@@ -23,11 +23,13 @@ function App() {
             onChange={(e) => setUserInput(e.target.value)}
           />
         </label>
-        <button type="submit">Submit</button>
+        {/* <button type="submit">Submit</button> */}
       </form>
-      {displayText && <p>You have entered this value: {displayText}</p>}
+      {/* {displayText && <p>You have entered this value: {displayText}</p>} */}
     </div>
   );
 }
+
+// handleSubmit
 
 export default App;
