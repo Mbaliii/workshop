@@ -34,8 +34,8 @@ jobs:
           # Determine the Firebase Hosting Channel based on the branch name
           if [ "${{ github.ref }}" = "refs/heads/main"]; then
           CHANNEL="main"
-          elif [ "${{ github.ref }}" = "refs/heads/prod"];
-          CHANNEL="prod"
+          elif [ "${{ github.ref }}" = "refs/heads/Unit"];
+          CHANNEL="Unit"
           else
           # If the branch is not main or prod, exit without deploying
           echo "Branch does not exist."
